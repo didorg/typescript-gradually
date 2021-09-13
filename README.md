@@ -30,3 +30,19 @@ tsc --init
   "target":"es6"
   ```
 - Now you just need to run `tsc` to compile the project. (compile the index.ts by default)  
+
+# Folder Structure  
+- On `tsconfig.json`
+- Uncomment "rootDir" and change it to:
+  ```
+  "rootDir": "./src", 
+  
+- Uncomment "outDir" and change it to:
+  ```
+  "outDir": "./dist", 
+  ``` 
+- Refactor your project and move `index.ts` to `src` folder. Delete `index.js` file and compile the project:  
+run 
+  ```
+  tsc
+  ```
