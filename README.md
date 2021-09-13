@@ -18,6 +18,7 @@ tsc -v
 - run: 
 ```
 tsc index.ts
+or
 tsc --watch index.ts (watch mode)
 ```
 ## Setup a configuration file  
