@@ -41,8 +41,23 @@ tsc --init
   ```
   "outDir": "./dist", 
   ``` 
-- Refactor your project and move `index.ts` to `src` folder. Delete `index.js` file and compile the project:  
+- Refactor your project and move `index.ts` to `src` folder.  
+- Delete `index.js` file and compile the project:  
 run 
   ```
   tsc
   ```
+- Add an `index.html` in the `dist` folder.  
+- Add the script tag, with the `index.js` -> file compiled by TypeScript  
+Ex.
+    ```
+    <body>
+    <h1>Hello World</h1>
+    <script src="index.js"></script>
+    </body>
+    ```
+    run  
+    ```
+    tsc
+    ```
+- This is the **basic** Workflow.  
