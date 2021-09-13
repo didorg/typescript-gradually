@@ -1,23 +1,23 @@
 "use strict";
 // Basic Types
 let id = 5;
-let company = 'Traversy Media';
+let company = "Traversy Media";
 let isPublished = true;
-let x = 'Hello';
+let x = "Hello";
 let ids = [1, 2, 3, 4, 5];
-let arr = [1, true, 'Hello'];
+let arr = [1, true, "Hello"];
 // Tuple
-let person = [1, 'Brad', true];
+let person = [1, "Brad", true];
 // Tuple Array
 let employees;
 employees = [
-    [1, 'Brad'],
-    [2, 'John'],
-    [3, 'Jill'],
+    [1, "Brad"],
+    [2, "John"],
+    [3, "Jill"],
 ];
 // Union
 let pid;
-pid = '22';
+pid = "22";
 // Enum
 var Direction1;
 (function (Direction1) {
@@ -35,7 +35,7 @@ var Direction2;
 })(Direction2 || (Direction2 = {}));
 const user = {
     id: 1,
-    name: 'John',
+    name: "John",
 };
 // Type Assertion
 let cid = 1;
@@ -45,13 +45,18 @@ let customerId = cid;
 function addNum(x, y) {
     return x + y;
 }
+// String 
+const fnc = (a, b) => {
+    let r = a + b;
+    return `Hello... ${a} + ${b} is: ${r}`;
+};
 // Void
 function log(message) {
     console.log(message);
 }
 const user1 = {
     id: 1,
-    name: 'John',
+    name: "John",
 };
 const add = (x, y) => x + y;
 const sub = (x, y) => x - y;
@@ -65,8 +70,8 @@ class Person {
         return `${this.name} is now registered`;
     }
 }
-const brad = new Person(1, 'Brad Traversy');
-const mike = new Person(2, 'Mike Jordan');
+const brad = new Person(1, "Brad Traversy");
+const mike = new Person(2, "Mike Jordan");
 // Subclasses
 class Employee extends Person {
     constructor(id, name, position) {
@@ -74,11 +79,11 @@ class Employee extends Person {
         this.position = position;
     }
 }
-const emp = new Employee(3, 'Shawn', 'Developer');
+const emp = new Employee(3, "Shawn", "Developer");
 // Generics
 function getArray(items) {
     return new Array().concat(items);
 }
 let numArray = getArray([1, 2, 3, 4]);
-let strArray = getArray(['brad', 'John', 'Jill']);
-strArray.push('Adam');
+let strArray = getArray(["brad", "John", "Jill"]);
+strArray.push("Adam");
