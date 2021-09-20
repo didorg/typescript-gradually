@@ -32,7 +32,7 @@ tsc --init
   ```
 - Now you just need to run `tsc` to compile the project. (compile the index.ts by default)  
 
-# Folder Structure  
+## Folder Structure  
 - On `tsconfig.json`
 - Uncomment "rootDir" and change it to:
   ```
@@ -62,3 +62,13 @@ Ex.
     tsc
     ```
 - This is the **basic** Workflow.  
+
+  
+## ts-node  
+- ts-node is a TypeScript execution engine and REPL for Node.js.  
+   
+  ```
+  # Execute a script as `node` + `tsc`.
+  ts-node script.ts
+  ```
+  https://typestrong.org/ts-node/docs/ 
