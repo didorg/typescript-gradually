@@ -17,7 +17,23 @@ const arrConcat2: number[] = nums2.concat(2, 1);
 const arrConcat3: number[] = nums1.concat(...nums2, 2, 1);
 const arrConcat4: number[] = nums1.concat(2, 1, ...nums2);
 
-console.log(arrConcat1);
-console.log(arrConcat2);
-console.log(arrConcat3);
-console.log(arrConcat4);
+// nested Objects
+const obj1 = {
+  s1: "obj1",
+  n1: 5,
+  nObj1: {
+    ss1: "string of nested obj1",
+    nn1: 34,
+  },
+};
+
+const obj2 = {
+  ...obj1,
+  s2: "obj2",
+  n2: 10,
+  nObj2: {
+    ss2: "String of nested obj 2",
+    nn2: 37,
+  },
+};
+
