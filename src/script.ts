@@ -37,3 +37,13 @@ const obj2 = {
   },
 };
 
+// for...in and for...of
+const iterable: number[] = [3, 5, 7];
+
+for(const elem in iterable){
+  console.log(elem);
+} // 0 1 2
+
+for(const elem of iterable){
+  console.log(elem); 
+} // 3 5 7
